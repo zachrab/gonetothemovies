@@ -3,7 +3,7 @@ class Theater
   @lines=[]
   @windows=[]
   lines = 0
-  numwindows = 0
+  servicetimes = []
 
 def initialize(lines, windows)
   
@@ -14,8 +14,8 @@ def initialize(lines, windows)
     @lines.pop(Line.new)
   end
   
-  for i in 0..numwindows
-    @windows.pop(Window.new)
+  for i in 0..servicetimes.size
+    @windows.pop(Window.new(servicetimes[i]))
   end
   
 end
