@@ -7,9 +7,13 @@ class Window
     @ticketsold = 0
   end
   
-  def sellTicket
+  def sellticket
     @occupied = true
     @ticketsold += 1
   end
-
+  
+  def soldticket
+    @occupied = false
+  end
+  
 end

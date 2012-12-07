@@ -1,21 +1,18 @@
+require './Line.rb'
+require './Window.rb'
+
 class Theater
   attr_accessor :lines, :windows
-  @lines=[]
-  @windows=[]
-  lines = 0
-  servicetimes = []
 
-def initialize(lines, windows)
-  
-  numlines = lines
-  numwindows = windows
-  
+def initialize(numlines, servicetimes)
+  @lines = []
+  @windows = []
   for i in 0..numlines
-    @lines.pop(Line.new)
+    @lines.push(Line.new)
   end
   
   for i in 0..servicetimes.size
-    @windows.pop(Window.new(servicetimes[i]))
+    @windows.push(Window.new(servicetimes[i]))
   end
   
 end

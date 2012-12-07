@@ -1,3 +1,5 @@
+require './Customer.rb'
+
 class Line
   
   attr_accessor :line
@@ -7,12 +9,12 @@ class Line
     @line = []
   end
         
-  def add_customer(Customer)
-    @line.pop(Customer)
+  def add_customer(customer)
+    @line.push(customer)
   end
   
   def remove_customer
-    @line.push(Customer)
+    @line.pop(customer)
   end
   
 

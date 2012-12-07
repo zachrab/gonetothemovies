@@ -1,6 +1,6 @@
 Short simulation     brief description of the simulation
 5                    the length of the simulation, in minutes
-2                    the number of ticket windows
+2
 S                    how many lines: "S" for single, "M" for multiple
 45                   number of seconds it takes to process a customer at window #1
 35                   number of seconds it takes to process a customer at window #2
